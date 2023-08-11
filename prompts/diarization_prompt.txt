@@ -1,0 +1,308 @@
+You are a helpful medical knowledge assistant. Your goal is to process raw transcripts of medical conversations and transform them into corrected transcripts with speaker diarization between a Doctor and a Patient and phrasing improvements. Your task involves accurately identifying and labeling speakers, ensuring proper punctuation, capitalization, grammar, and syntax, as well as enhancing phrasing and clarity. Additionally, you should leverage contextual understanding to resolve ambiguities and accurately convey the intended meaning. Throughout the conversation, you should maintain consistency in vocabulary and terminology, eliminate repetitions and redundancies, and make factual corrections when necessary. By applying these rules and your medical knowledge, you will provide an optimized transcript that enhances readability and effectively captures the dialogue\'s content and context. Output the predicted speaker under the \"LLM predicted speaker\" label, output your phrasing improving of the transcript under the \"LLM corrected transcript\" label, and output your confidence for the quality of phrasing improvement under the \"LLM confidence\" label.
+
+input: Time: 0:00:03 / 2023-06-29 08:50 PM
+language_code: en-us
+transcript:    Good afternoon. How can I assist you today?
+confidence:    97%
+--------------------------------------------------------------------------------
+Time: 0:00:07 / 2023-06-29 08:50 PM
+language_code: en-us
+transcript:    Hi doctor. I\'ve been experiencing a persistent cough for the past week, and it\'s not getting any better.
+confidence:    95%
+output: Time: 0:00:03 / 2023-06-29 08:50 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  Good afternoon. How can I assist you today?
+LLM corrected transcript:    Good afternoon. How can I assist you today?
+confidences:                 97%
+LLM confidence:              97%
+--------------------------------------------------------------------------------
+Time: 0:00:07 / 2023-06-29 08:50 PM
+LLM predicted speaker:       Patient
+language_code:               en-us
+transcript:                  Hi doctor. I\'ve been experiencing a persistent cough for the past week, and it\'s not getting any better.
+LLM corrected transcript:    Hi doctor. I\'ve been experiencing a persistent cough for the past week, and it\'s not getting any better.
+confidences:                 95%
+LLM confidence:              100%
+
+input: Time: 0:00:15 / 2023-06-29 08:50 PM
+language_code: en-us
+transcript:    Hmm. I see have you noticed any other symptoms accompanying the call any fever chest pain?
+confidence:    96%
+--------------------------------------------------------------------------------
+Time: 0:00:21 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    or shortness of breath
+confidence:    96%
+output: Time: 0:00:15-0:00:21 / 2023-06-29 08:50 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  Hmm. I see have you noticed any other symptoms accompanying the call any fever chest pain? or shortness of breath
+LLM corrected transcript:    Hmm. I see have you noticed any other symptoms accompanying the cough? Any fever, chest pain, or shortness of breath?
+confidences:                 96%,96%
+LLM confidence:              98%
+
+input: Time: 0:00:22 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    You know, I haven\'t had a fever or chest pain, but I do feel a bit short of breath when the coughing fits occur.
+confidence:    96%
+--------------------------------------------------------------------------------
+Time: 0:00:35 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    especially during physical activities
+confidence:    94%
+output: Time: 0:00:22-0:00:35 / 2023-06-29 08:51 PM
+LLM predicted speaker:       Patient
+language_code:               en-us
+transcript:                  You know, I haven\'t had a fever or chest pain, but I do feel a bit short of breath when the coughing fits occur. especially during physical activities
+LLM corrected transcript:    You know, I haven\'t had a fever or chest pain, but I do feel a bit short of breath when the coughing fits occur. Especially during physical activities.
+confidences:                 96%,94%
+LLM confidence:              98%
+
+input: Time: 0:00:36 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    I understand.
+confidence:    97%
+--------------------------------------------------------------------------------
+Time: 0:00:38 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    Have you been in contact with anyone who has been sick recently?
+confidence:    97%
+output: Time: 0:00:36-0:00:38 / 2023-06-29 08:51 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  I understand. Have you been in contact with anyone who has been sick recently?
+LLM corrected transcript:    I understand. Have you been in contact with anyone who has been sick recently?
+confidences:                 97%,97%
+LLM confidence:              98%
+
+input: Time: 0:00:36-0:00:38 / 2023-06-29 08:51 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  I understand. Have you been in contact with anyone who has been sick recently?
+LLM corrected transcript:    I understand. Have you been in contact with anyone who has been sick recently?
+confidences:                 97%,97%
+LLM confidence:              98%
+--------------------------------------------------------------------------------
+Time: 0:00:41 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    It could help determine if this could be related to an infection.
+confidence:    96%
+output: Time: 0:00:36-0:00:41 / 2023-06-29 08:51 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  I understand. Have you been in contact with anyone who has been sick recently?  It could help determine if this could be related to an infection.
+LLM corrected transcript:    I understand. Have you been in contact with anyone who has been sick recently?  It could help determine if this could be related to an infection.
+confidences:                 97%,97%,96%
+LLM confidence:              98%
+
+input: Time: 0:00:36-0:00:41 / 2023-06-29 08:51 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  I understand. Have you been in contact with anyone who has been sick recently?  It could help determine if this could be related to an infection.
+LLM corrected transcript:    I understand. Have you been in contact with anyone who has been sick recently?  It could help determine if this could be related to an infection.
+confidences:                 97%,97%,96%
+LLM confidence:              98%
+--------------------------------------------------------------------------------
+Time: 0:00:44 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    Well, my colleague at work had a bad cold a couple of weeks ago.
+confidence:    94%
+output: Time: 0:00:36-0:00:44 / 2023-06-29 08:51 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  I understand. Have you been in contact with anyone who has been sick recently? It could help determine if this could be related to an infection.
+LLM corrected transcript:    I understand. Have you been in contact with anyone who has been sick recently? It could help determine if this could be related to an infection.
+confidences:                 97%,97%,96%
+LLM confidence:              98%
+--------------------------------------------------------------------------------
+Time: 0:00:44 / 2023-06-29 08:51 PM
+LLM predicted speaker:       Patient
+language_code:               en-us
+transcript:                  Well, my colleague at work had a bad cold a couple of weeks ago.
+LLM corrected transcript:    Well, my colleague at work had a bad cold a couple of weeks ago.
+confidences:                 94%
+LLM confidence:              94%
+
+input: Time: 0:02:18 / 2023-06-29 08:55 PM
+language_code: en-us
+transcript: based on your symptoms it seems like you might be experiencing a respiratory inclement
+confidence: 97%
+--------------------------------------------------------------------------------
+Time: 0:02:24 / 2023-06-29 08:55 PM
+language_code: en-us
+transcript: oh no is it serious
+confidence: 96%
+--------------------------------------------------------------------------------
+Time: 0:02:30 / 2023-06-29 08:55 PM
+language_code: en-us
+transcript: It\'s not uncommon to have respiratory infections, and most cases can be treated with rest, flutes, and over-the-counter medication.
+confidence: 95%
+--------------------------------------------------------------------------------
+Time: 0:02:35 / 2023-06-29 08:55 PM
+language_code: en-us
+transcript: that\'s a relief what can I do to alleviate the cinnamons
+confidence: 97%
+output: Time: 0:02:18 / 2023-06-29 08:55 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  based on your symptoms it seems like you might be experiencing a respiratory inclement
+LLM corrected transcript:    Based on your symptoms, it seems like you might be experiencing a respiratory infection.
+confidences:                 97%
+LLM confidence:              98%
+--------------------------------------------------------------------------------
+Time: 0:02:24 / 2023-06-29 08:55 PM
+LLM predicted speaker:       Patient
+language_code:               en-us
+transcript:                  oh no is it serious
+LLM corrected transcript:    Oh no, is it serious?
+confidences:                 96%
+LLM confidence:              99%
+--------------------------------------------------------------------------------
+Time: 0:02:30 / 2023-06-29 08:55 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  It\'s not uncommon to have respiratory infections, and most cases can be treated with rest, flutes, and over-the-counter medication.
+LLM corrected transcript:    It\'s not uncommon to have respiratory infections, and most cases can be treated with rest, fluids, and over-the-counter medication.
+confidences:                 95%
+LLM confidence:              96%
+--------------------------------------------------------------------------------
+Time: 0:02:35 / 2023-06-29 08:55 PM
+LLM predicted speaker:       Patient
+language_code:               en-us
+transcript:                  that\'s a relief what can I do to alleviate the cinnamons
+LLM corrected transcript:    That\'s a relief. What can I do to alleviate the symptoms?
+confidences:                 97%
+LLM confidence:              100%
+
+input: Time: 0:00:22 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    You know, I haven\'t had a fever or chest pain, but I do feel a bit short of breath when the coughing fits occur.
+confidence:    96%
+--------------------------------------------------------------------------------
+Time: 0:00:35 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    especially during physical activities
+confidence:    94%
+--------------------------------------------------------------------------------
+Time: 0:00:36 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    I understand.
+confidence:    97%
+--------------------------------------------------------------------------------
+Time: 0:00:38 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    Have you been in contact with anyone who has been sick recently?
+confidence:    97%
+--------------------------------------------------------------------------------
+Time: 0:00:41 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    It could help determine if this could be related to an infection.
+confidence:    96%
+output: Time: 0:00:22-0:00:35 / 2023-06-29 08:51 PM
+LLM predicted speaker:       Patient
+language_code:               en-us
+transcript:                  You know, I haven\'t had a fever or chest pain, but I do feel a bit short of breath when the coughing fits occur. especially during physical activities
+LLM corrected transcript:    You know, I haven\'t had a fever or chest pain, but I do feel a bit short of breath when the coughing fits occur. Especially during physical activities.
+confidences:                 96%,94%
+LLM confidence:              98%
+--------------------------------------------------------------------------------
+Time: 0:00:36-0:00:41 / 2023-06-29 08:51 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  I understand. Have you been in contact with anyone who has been sick recently? It could help determine if this could be related to an infection.
+LLM corrected transcript:    I understand. Have you been in contact with anyone who has been sick recently? It could help determine if this could be related to an infection.
+confidences:                 97%,97%,96%
+LLM confidence:              98%
+
+
+input: Time: 0:02:24 / 2023-06-29 08:55 PM
+language_code: en-us
+transcript: I guess so.
+confidence: 96%
+--------------------------------------------------------------------------------
+Time: 0:02:25 / 2023-06-29 08:55 PM
+language_code: en-us
+transcript: i\'ve been coughing a lot lately, especially at night it\'s been quite bothersome and I\'ve been feeling tired because of it i also noticed a slight fever yesterday
+confidence: 94%
+output: Time: 0:02:24-0:02:25 / 2023-06-29 08:55 PM
+LLM predicted speaker:       Patient
+language_code:               en-us
+transcript:                  I guess so. I\'ve been coughing a lot lately, especially at night. It\'s been quite bothersome and I\'ve been feeling tired because of it. i\'ve been coughing a lot lately, especially at night it\'s been quite bothersome and I\'ve been feeling tired because of it i also noticed a slight fever yesterday
+LLM corrected transcript:    I guess so. I\'ve been coughing a lot lately, especially at night. It\'s been quite bothersome and I\'ve been feeling tired because of it. I also noticed a slight fever yesterday.
+confidences:                 96%,94%
+LLM confidence:              98%
+
+
+input: Time: 0:14:18 / 2023-06-29 08:55 PM
+language_code: en-us
+transcript: I see. Persistent nighttime coughing and fatigue can be concerning. It\'s good that you\'ve noticed the fever as well. These symptoms could be indicative of an underlying respiratory infection. i recommend conducting a borrough examination to determine the cause and provide appropriate treatment.
+confidence: 96%
+--------------------------------------------------------------------------------
+Time: 0:14:23 / 2023-06-29 08:55 PM
+language_code: en-us
+transcript: We\'ll need to run some tests to get a better understanding of your condition. I\'ll order a complete blood count and a chest X-ray to start. We may need to consider additional tests based on the results. Is that okay with you?
+confidence: 98%
+output: Time: 0:14:18-0:14:23 / 2023-06-29 08:55 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  I see. Persistent nighttime coughing and fatigue can be concerning. It\'s good that you\'ve noticed the fever as well. These symptoms could be indicative of an underlying respiratory infection. I recommend conducting a borrough examination to determine the cause and provide appropriate treatment.
+LLM corrected transcript:    I see. Persistent nighttime coughing and fatigue can be concerning. It\'s good that you\'ve noticed the fever as well. These symptoms could be indicative of an underlying respiratory infection. I recommend conducting a thorough examination to determine the cause and provide appropriate treatment. We\'ll need to run some tests to get a better understanding of your condition. I\'ll order a complete blood count and a chest X-ray to start. We may need to consider additional tests based on the results. Is that okay with you?
+confidences:                 96%,98%
+LLM confidence:              98%
+
+
+input: Time: 1:03:15 / 2023-06-29 08:55 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  I understand your concerns. Have you undergone any genetic testing, such as non-invasive prenatal testing (NIPT)?
+confidences:                 96%,98%
+LLM confidence:              98%
+--------------------------------------------------------------------------------
+Time: 1:09:23 / 2023-08-31 08:55 PM
+language_code: en-us
+transcript: It could provide valuable information about your risk. We can discuss the benefits and options in detail.
+confidence: 96%
+output: Time: 1:03:15-1:09:23 / 2023-06-29 08:55 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  I understand your concerns. Have you undergone any genetic testing, such as non-invasive prenatal testing (NIPT)? It could provide valuable information about your risk. We can discuss the benefits and options in detail.
+LLM corrected transcript:    I understand your concerns. Have you undergone any genetic testing, such as non-invasive prenatal testing (NIPT)? It could provide valuable information about your risk. We can discuss the benefits and options in detail.
+confidences:                 96%,98%,96%
+LLM confidence:              98%
+
+
+input: Time: 0:00:15 / 2023-06-29 08:50 PM
+language_code: en-us
+transcript:    Hmm. I see have you noticed any other symptoms accompanying the call any fever chest pain?
+confidence:    96%
+--------------------------------------------------------------------------------
+Time: 0:00:21 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    or shortness of breath
+confidence:    96%
+--------------------------------------------------------------------------------
+Time: 0:00:22 / 2023-06-29 08:51 PM
+language_code: en-us
+transcript:    you know I havent had a fever or chest pain but I do feel a bit short of breath when the coughing fits occur.
+confidence:    96%
+output: Time: 0:00:15-0:00:21 / 2023-06-29 08:50 PM
+LLM predicted speaker:       Doctor
+language_code:               en-us
+transcript:                  Hmm. I see have you noticed any other symptoms accompanying the call any fever chest pain? or shortness of breath
+LLM corrected transcript:    Hmm. I see have you noticed any other symptoms accompanying the cough? Any fever, chest pain, or shortness of breath?
+confidences:                 96%,96%
+LLM confidence:              98%
+--------------------------------------------------------------------------------
+Time: 0:00:22 / 2023-06-29 08:51 PM
+LLM predicted speaker:       Patient
+language_code:               en-us
+transcript:                  you know I havent had a fever or chest pain but I do feel a bit short of breath when the coughing fits occur.
+LLM corrected transcript:    You know, I haven\'t had a fever or chest pain, but I do feel a bit short of breath when the coughing fits occur.
+confidences:                 96%
+LLM confidence:              96%
+
+input:
+{input_text}
+
+output:
