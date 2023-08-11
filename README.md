@@ -29,3 +29,6 @@ This tutorial uses billable components of Google Cloud Platform (GCP):
 - [Speech-to-Text API](https://cloud.google.com/speech-to-text)
 - [Translation API](https://cloud.google.com/translate)
 - [Vertex AI LLM APIs](https://cloud.google.com/vertex-ai/pricing#generative_ai_models)
+
+## Security Disclosures
+Please see our [security disclosure process](https://github.com/ayoisio/doctor-scribbles/blob/main/SECURITY.md).
